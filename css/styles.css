@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Open+Sans");
+
+:root {
+  --spacing-small: calc(var(--spacing-medium) * 0.5);
+  --spacing-large: calc(var(--spacing-medium) * 2);
+  --spacing-xlarge: calc(var(--spacing-medium) * 3);
+  --block-size: 142px;
+  --primary-color: #fb3;
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -22,13 +31,6 @@
   height: 1.5em;
 }
 
-:root {
-  --spacing-small: calc(var(--spacing-medium) * 0.5);
-  --spacing-large: calc(var(--spacing-medium) * 2);
-  --spacing-xlarge: calc(var(--spacing-medium) * 3);
-  --block-size: 142px;
-  --primary-color: #fb3;
-}
 
 * {
   box-sizing: border-box;
