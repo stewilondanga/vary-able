@@ -134,7 +134,7 @@ code {
   border-bottom-right-radius: var(--border-radius);
 }
 
-/*.heading-bar:before {
+.heading-bar:before {
   position: absolute;
   top: 0;
   left: -100vw;
@@ -144,7 +144,7 @@ code {
   background-color: var(--heading-bar-color);
 }
 
-.subtitle {
+/*.subtitle {
   margin: 0;
   font-family: var(--heading-font);
   font-size: 1.1rem;
