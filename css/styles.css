@@ -110,7 +110,7 @@ style:focus {
   border: 1px solid var(--code-color);
 }
 
-/*code {
+code {
   display: block;
   margin: 0 0 var(--spacing-medium);
   line-height: 1.3em;
@@ -119,7 +119,7 @@ style:focus {
   white-space: pre-wrap;
 }
 
-.inline-code {
+/*.inline-code {
   font-family: monospace;
   line-height: 0;
 }
