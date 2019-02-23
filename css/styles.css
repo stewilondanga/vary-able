@@ -171,12 +171,13 @@ code {
   line-height: 1.05em;
 }
 
-/*.example-container--a i {
+.example-container--a i {
   margin: 0 var(--spacing-large);
   display: block;
   font-size: 3rem;
 }
-.example-container--a .box {
+
+/*.example-container--a .box {
   height: 80px;
   width: 80px;
   background-color: var(--primary-color);
