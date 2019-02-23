@@ -8,6 +8,10 @@
   --primary-color: #fb3;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -32,9 +36,6 @@
 }
 
 
-* {
-  box-sizing: border-box;
-}
 
 body {
   font-family: var(--body-font), sans-serif;
