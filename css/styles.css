@@ -214,7 +214,7 @@ code {
   }
 }
 
-/*@media all and (max-width: 500px) {
+@media all and (max-width: 500px) {
   article {
     padding: var(--spacing-large) var(--spacing-medium);
   }
@@ -228,7 +228,7 @@ code {
   }
 }
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
