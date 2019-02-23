@@ -10,172 +10,181 @@
 <body>
 
   <div class="my_social">
-      <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
-          <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
-        </a>
-      <a href="https://stewilondanga.github.io/" class="social">
-          <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
-        </a>
-      <a href="https://twitter.com/stew_ilondanga" class="social">
-          <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
-        </a>
-    </div>
+    <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
+      <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
+    </a>
+    <a href="https://stewilondanga.github.io/" class="social">
+      <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
+    </a>
+    <a href="https://twitter.com/stew_ilondanga" class="social">
+      <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
+    </a>
+  </div>
 
-    <article>
-      <section>
-        <div class="heading-bar">
-          <h1>CSS Variables 101</h1>
-          <p class="subtitle">an interactive lesson</p>
-        </div>
-        <p>If you've never used CSS variables (AKA custom properties), you're in for a treat! They're easy to use, and they're so powerful that they may even change the way you work. Near the end of this lesson, you'll also have a chance to practice by styling this page with CSS variables.</p>
-        <p>So let's jump right in and create a CSS variable. You can declare a variable within <span class="inline-code">:root</span>, which will make it available to all elements on the page. The variable name always starts with two dashes:</p>
-        <code>:root {
-      --primary-color: #fb3;
-    }</code>
-        <p>Then, you can use the variable as a value for any property with the <span class="inline-code">var()</span> function:
-    </p>
-        <code>.box {
-      background-color: var(--primary-color);
-    }</code>
-        <p>That's it! The result will look like this:
-    </p>
-        <div class="example-container example-container--a">
-          <div class="box"></div>
+  <article>
+    <section>
+      <div class="heading-bar">
+        <h1>CSS Variables 101</h1>
+        <p class="subtitle">an interactive lesson</p>
+      </div>
+      <p>If you've never used CSS variables (AKA custom properties), you're in for a treat! They're easy to use, and they're so powerful that they may even change the way you work. Near the end of this lesson, you'll also have a chance to practice
+        by styling this page with CSS variables.</p>
+      <p>So let's jump right in and create a CSS variable. You can declare a variable within <span class="inline-code">:root</span>, which will make it available to all elements on the page. The variable name always starts with two dashes:</p>
+      <code>:root {
+        --primary-color: #fb3;
+        }</code>
+      <p>Then, you can use the variable as a value for any property with the <span class="inline-code">var()</span> function:
+      </p>
+      <code>.box {
+        background-color: var(--primary-color);
+        }</code>
+      <p>That's it! The result will look like this:
+      </p>
+      <div class="example-container example-container--a">
+        <div class="box"></div>
 
-        </div>
-        <p>Just like with preprocessor variables, you can use CSS variables throughout your site to ensure different elements have consistent formatting.
-    </p>
-        <p>But there's one big difference with CSS variables: <em>You can change them at runtime</em>.
-    </p>
-      </section>
-      <section>
-        <div class="heading-bar">
-          <h3>Changing variables</h3>
-        </div>
-        <p>Try resizing your browser below 700px. You should see the elements below change color:</p>
-        <div class="example-container example-container--a">
-          <i class="fas fa-lightbulb"></i>
-          <div class="box"></div>
-          <p>Some<br> text</p>
-        </div>
+      </div>
+      <p>Just like with preprocessor variables, you can use CSS variables throughout your site to ensure different elements have consistent formatting.
+      </p>
+      <p>But there's one big difference with CSS variables: <em>You can change them at runtime</em>.
+      </p>
+    </section>
+    <section>
+      <div class="heading-bar">
+        <h3>Changing variables</h3>
+      </div>
+      <p>Try resizing your browser below 700px. You should see the elements below change color:</p>
+      <div class="example-container example-container--a">
+        <i class="fas fa-lightbulb"></i>
+        <div class="box"></div>
+        <p>Some<br> text</p>
+      </div>
 
-        <p>This is done by simply changing the variable with a media query:
-    </p>
-        <code>@media all and (max-width: 700px) {
-      :root {
+      <p>This is done by simply changing the variable with a media query:
+      </p>
+      <code>@media all and (max-width: 700px) {
+        :root {
         --primary-color: #47d;
-      }
-    }</code>
-        <p>So by changing the value of a single variable, many different elements can be restyled at once. Imagine how simple your media queries could be if you also used variables to control margins, text formatting, container sizes, grid properties, and more. In fact, Mike Riethmuller <a href="https://www.madebymike.com.au/writing/using-css-variables/" target="_blank">makes a case</a> for using variables to handle almost all responsive design logic.</p>
-      </section>
-      <section>
-        <div class="heading-bar">
-          <h3>Variables cascade</h3>
+        }
+        }</code>
+      <p>So by changing the value of a single variable, many different elements can be restyled at once. Imagine how simple your media queries could be if you also used variables to control margins, text formatting, container sizes, grid properties,
+        and more. In fact, Mike Riethmuller <a href="https://www.madebymike.com.au/writing/using-css-variables/" target="_blank">makes a case</a> for using variables to handle almost all responsive design logic.</p>
+    </section>
+    <section>
+      <div class="heading-bar">
+        <h3>Variables cascade</h3>
+      </div>
+      <p>You aren't limited to declaring variables in <span class="inline-code">:root</span>. You can declare (or modify) a variable anywhere, just like any property—in a container, card, hover state, and more. The variable's value will cascade down
+        to all of the element's children.</p>
+      <p>For example, we could create an image gallery where the image height, width, size, and border radius use variables. If these variables are declared in <span class="inline-code">:root</span>, the gallery will use those values by default.
+        However, we can also override the values within the <span class="inline-code">.gallery</span> class, in this case to zero out the border radius:</p>
+      <code>.gallery {
+        --border-radius: 0;
+        }
+      </code>
+      <div class="gallery">
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/300x300" alt="">
         </div>
-        <p>You aren't limited to declaring variables in <span class="inline-code">:root</span>. You can declare (or modify) a variable anywhere, just like any property—in a container, card, hover state, and more. The variable's value will cascade down to all of the element's children.</p>
-        <p>For example, we could create an image gallery where the image height, width, size, and border radius use variables. If these variables are declared in <span class="inline-code">:root</span>, the gallery will use those values by default. However, we can also override the values within the <span class="inline-code">.gallery</span> class, in this case to zero out the border radius:</p>
-        <code>.gallery {
-      --border-radius: 0;
-    }
-        </code>
-        <div class="gallery">
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/300x300" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/200x200" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/240x240" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/220x220" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/210x210" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/250x250" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/260x260" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/280x280" alt="">
-          </div>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/200x200" alt="">
         </div>
-        <p>We can also create other variations of the gallery with modifier classes that set the variables to other values:</p>
-        <code>.gallery--dots {
-      --block-size: 60px;
-      --border-radius: 50%;
-    }</code>
-        <p>In the new gallery, we'll use both the <span class="inline-code">.gallery</span> and <span class="inline-code">.gallery--dots</span> classes to get this result:</p>
-        <div class="gallery gallery--dots">
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/300x300" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/200x200" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/240x240" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/220x220" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/210x210" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/250x250" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/260x260" alt="">
-          </div>
-          <div class="gallery__image">
-            <img src="https://source.unsplash.com/random/280x280" alt="">
-          </div>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/240x240" alt="">
         </div>
-        <p>Note that we're able to make these changes by setting the variables in the container. We don't have to use child selectors (although we could if we wanted to) since the variables' new values will be passed down to the children. This makes modifier classes easier to create and manage.</p>
-        <p>This also means that our original <span class="inline-code">.gallery</span> class becomes a more generic template that we can modify and use in all kinds of situations. We can get a lot of mileage out of this class with basically no repetition.</p>
-      </section>
-      <section>
-        <div class="heading-bar">
-          <h3>Style this lesson!</h3>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/220x220" alt="">
         </div>
-        <p>Now that you know how to use CSS variables, you can experiment with an example: this very lesson. In the space below, try changing some of the values to style it however you want:</p>
-        <style contenteditable>:root {
-      --spacing-medium: 1.2rem;
-      --border-radius: 40px;
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/210x210" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/250x250" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/260x260" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/280x280" alt="">
+        </div>
+      </div>
+      <p>We can also create other variations of the gallery with modifier classes that set the variables to other values:</p>
+      <code>.gallery--dots {
+        --block-size: 60px;
+        --border-radius: 50%;
+        }</code>
+      <p>In the new gallery, we'll use both the <span class="inline-code">.gallery</span> and <span class="inline-code">.gallery--dots</span> classes to get this result:</p>
+      <div class="gallery gallery--dots">
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/300x300" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/200x200" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/240x240" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/220x220" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/210x210" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/250x250" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/260x260" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="https://source.unsplash.com/random/280x280" alt="">
+        </div>
+      </div>
+      <p>Note that we're able to make these changes by setting the variables in the container. We don't have to use child selectors (although we could if we wanted to) since the variables' new values will be passed down to the children. This makes
+        modifier classes easier to create and manage.</p>
+      <p>This also means that our original <span class="inline-code">.gallery</span> class becomes a more generic template that we can modify and use in all kinds of situations. We can get a lot of mileage out of this class with basically no
+        repetition.</p>
+    </section>
+    <section>
+      <div class="heading-bar">
+        <h3>Style this lesson!</h3>
+      </div>
+      <p>Now that you know how to use CSS variables, you can experiment with an example: this very lesson. In the space below, try changing some of the values to style it however you want:</p>
+      <style contenteditable>
+        :root {
+          --spacing-medium: 1.2rem;
+          --border-radius: 40px;
 
-        /* text */
-      --base-font-size: 16px;
-      --body-font: 'Open Sans';
-      --heading-font: 'Roboto Slab';
+          /* text */
+          --base-font-size: 16px;
+          --body-font: 'Open Sans';
+          --heading-font: 'Roboto Slab';
 
-        /* colors */
-      --bg-color: white;
-      --body-color: black;
-      --code-color: #f25000;
-      --link-color: #00b0e0;
-      --heading-color: #f2f2f2;
-      --heading-bar-color: #00bbb5;
-    }</style>
-      </section>
-      
-    </article>
+          /* colors */
+          --bg-color: white;
+          --body-color: black;
+          --code-color: #f25000;
+          --link-color: #00b0e0;
+          --heading-color: #f2f2f2;
+          --heading-bar-color: #00bbb5;
+        }
+      </style>
+    </section>
+
+  </article>
 
   <section id="contact">
     <div class="overlay">
       <div class="containers">
 
         <h1>
-<script>
-with(new Date)c=-new Date(y=getFullYear(),m=getMonth()).getDay(x=new Date(y,++m,0).getDate(b=-1))
-h='<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 '+' '+y+'/'+m+'<tr>'+'SuMoTuWeThFrSa'.replace(/(..)/g,'<th>$1')
-while((b++>5?b=0:b)|c<x)h+=(b?'':'<tr>')+'<td>'+(++c<1|c>x?'-':c);document.write(h+'</table>')
-</script>
-</h1>
+          <script>
+            with(new Date) c = -new Date(y = getFullYear(), m = getMonth()).getDay(x = new Date(y, ++m, 0).getDate(b = -1))
+            h = '<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 ' + ' ' + y + '/' + m + '<tr>' + 'SuMoTuWeThFrSa'.replace(/(..)/g, '<th>$1')
+            while ((b++ > 5 ? b = 0 : b) | c < x) h += (b ? '' : '<tr>') + '<td>' + (++c < 1 | c > x ? '-' : c);
+            document.write(h + '</table>')
+          </script>
+        </h1>
 
       </div>
     </div>
