@@ -144,7 +144,7 @@ code {
   background-color: var(--heading-bar-color);
 }
 
-/*.subtitle {
+.subtitle {
   margin: 0;
   font-family: var(--heading-font);
   font-size: 1.1rem;
@@ -152,7 +152,7 @@ code {
   color: var(--heading-color);
 }
 
-.example-container {
+/*.example-container {
   margin: var(--spacing-medium);
   display: flex;
   flex-flow: row wrap;
