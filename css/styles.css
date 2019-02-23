@@ -12,6 +12,13 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--body-font), sans-serif;
+  font-size: var(--base-font-size);
+  background-color: var(--bg-color);
+  color: var(--body-color);
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -37,12 +44,6 @@
 
 
 
-body {
-  font-family: var(--body-font), sans-serif;
-  font-size: var(--base-font-size);
-  background-color: var(--bg-color);
-  color: var(--body-color);
-}
 
 article {
   display: flex;
