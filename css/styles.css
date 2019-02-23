@@ -202,13 +202,13 @@ code {
   margin: var(--spacing-small);
 }
 
-/*.gallery__image img {
+.gallery__image img {
   height: 100%;
   width: 100%;
   border-radius: var(--border-radius);
 }
 
-@media all and (max-width: 700px) {
+/*@media all and (max-width: 700px) {
   :root {
     --primary-color: #47d;
   }
