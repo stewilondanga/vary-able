@@ -177,13 +177,13 @@ code {
   font-size: 3rem;
 }
 
-/*.example-container--a .box {
+.example-container--a .box {
   height: 80px;
   width: 80px;
   background-color: var(--primary-color);
 }
 
-.gallery {
+/*.gallery {
   --border-radius: 0;
   margin: var(--spacing-medium) calc(var(--spacing-medium) * -1);
   display: flex;
