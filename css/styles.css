@@ -34,14 +34,14 @@ body {
   height: 1.5em;
 }
 
-/*article {
+article {
   display: flex;
   flex-flow: column nowrap;
   padding: var(--spacing-large);
   align-items: center;
 }
 
-section {
+/*section {
   max-width: 39rem;
 }
 
