@@ -106,11 +106,11 @@ style {
   outline: 0;
 }
 
-/*style:focus {
+style:focus {
   border: 1px solid var(--code-color);
 }
 
-code {
+/*code {
   display: block;
   margin: 0 0 var(--spacing-medium);
   line-height: 1.3em;
