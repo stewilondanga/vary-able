@@ -124,7 +124,7 @@ code {
   line-height: 0;
 }
 
-/*.heading-bar {
+.heading-bar {
   position: relative;
   display: inline-block;
   margin: var(--spacing-large) 0 var(--spacing-medium);
@@ -133,7 +133,8 @@ code {
   border-top-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
 }
-.heading-bar:before {
+
+/*.heading-bar:before {
   position: absolute;
   top: 0;
   left: -100vw;
