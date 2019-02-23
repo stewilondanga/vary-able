@@ -152,13 +152,14 @@ code {
   color: var(--heading-color);
 }
 
-/*.example-container {
+.example-container {
   margin: var(--spacing-medium);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-.example-container--a {
+
+/*.example-container--a {
   align-items: center;
   color: var(--primary-color);
 }
