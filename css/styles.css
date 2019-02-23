@@ -191,11 +191,12 @@ code {
   justify-content: center;
 }
 
-/*.gallery--dots {
+.gallery--dots {
   --block-size: 60px;
   --border-radius: 50%;
 }
-.gallery__image {
+
+/*.gallery__image {
   height: var(--block-size);
   width: var(--block-size);
   margin: var(--spacing-small);
