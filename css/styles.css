@@ -80,10 +80,11 @@ ul li {
   line-height: 1.5em;
 }
 
-/*a {
+a {
   color: var(--link-color);
 }
-a:link {
+
+/*a:link {
   text-decoration: none;
 }
 a:hover {
