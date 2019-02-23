@@ -88,11 +88,11 @@ a:link {
   text-decoration: none;
 }
 
-/*a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-style {
+/*style {
   max-width: 100%;
   padding: var(--spacing-large);
   display: block;
