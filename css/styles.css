@@ -208,12 +208,13 @@ code {
   border-radius: var(--border-radius);
 }
 
-/*@media all and (max-width: 700px) {
+@media all and (max-width: 700px) {
   :root {
     --primary-color: #47d;
   }
 }
-@media all and (max-width: 500px) {
+
+/*@media all and (max-width: 500px) {
   article {
     padding: var(--spacing-large) var(--spacing-medium);
   }
