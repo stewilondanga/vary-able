@@ -159,11 +159,12 @@ code {
   justify-content: center;
 }
 
-/*.example-container--a {
+.example-container--a {
   align-items: center;
   color: var(--primary-color);
 }
-.example-container--a p {
+
+/*.example-container--a p {
   margin: var(--spacing-medium) var(--spacing-large);
   text-transform: uppercase;
   font-size: 1.4rem;
