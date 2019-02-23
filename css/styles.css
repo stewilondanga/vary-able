@@ -183,14 +183,15 @@ code {
   background-color: var(--primary-color);
 }
 
-/*.gallery {
+.gallery {
   --border-radius: 0;
   margin: var(--spacing-medium) calc(var(--spacing-medium) * -1);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-.gallery--dots {
+
+/*.gallery--dots {
   --block-size: 60px;
   --border-radius: 50%;
 }
