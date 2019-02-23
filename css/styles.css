@@ -92,7 +92,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/*style {
+style {
   max-width: 100%;
   padding: var(--spacing-large);
   display: block;
@@ -105,7 +105,8 @@ a:hover {
   border-radius: var(--border-radius);
   outline: 0;
 }
-style:focus {
+
+/*style:focus {
   border: 1px solid var(--code-color);
 }
 
