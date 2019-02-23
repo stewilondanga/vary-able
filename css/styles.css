@@ -70,10 +70,11 @@ p {
   line-height: 1.5em;
 }
 
-/*ul {
+ul {
   padding-left: var(--spacing-large);
 }
-ul li {
+
+/*ul li {
   margin: var(--spacing-small) 0;
   padding-left: 0.35rem;
   line-height: 1.5em;
